@@ -1,0 +1,379 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*background-image: url();
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-size: cover;*/
+    background-color: #ffff;
+    color: #ff2f2f;
+    font-family: "Roboto", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dark-mode {
+    background-color: #000;
+    color: #ff2f2f;
+    nav ul li a:hover{
+        background-color: #ffff;
+    }
+    a:hover {
+        background-color: #ffff;
+    }
+    button:hover{
+        background-color: #ffff;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    border-bottom: 2px solid #ff2f2f;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #ff2f2f;
+    border: #ff2f2f, 1px, solid;
+}
+
+nav ul li a.dark-mode:hover{
+    background-color: #000;
+}
+
+nav ul li a:hover {
+    background-color: #000;
+}
+table {
+    border:#ff2f2f 2px;
+    width: 50%;
+    border-collapse: collapse;      
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+a {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #ff2f2f;
+    border: #ff2f2f, 1px, solid;
+}
+
+a:hover {
+    background-color: #000
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+ /*.contenedor {
+    width: 80%;
+    margin: 0 auto;
+}
+    .contenedor img {
+        display: block;
+        margin-left: auto; 
+        margin-right: auto;
+    }*/
+
+svg {
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: -100px;
+    margin-bottom: -40px;
+}
+
+ .login a {
+    display: inline-block;
+    margin-top: 5px;
+ }
+
+ /*.elementos {
+
+ }*/
+
+/*section aside h2 {
+    text-align: justify;
+}*/
+
+ .pagina {
+    text-align: center;
+ }
+
+ form .register{
+    margin-top: 15px;
+ }
+
+ button{
+    all: unset;
+    cursor: pointer;
+    color: #ff2f2f;
+    border: #ff2f2f, 1px, solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+button:hover{
+    background-color: #000
+}
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      background-color: #1a1a1a;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .about-text h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+
+    .about-text p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .about-image {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+    }
+
+    /* Figuras decorativas */
+    .figure {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .figure.one {
+      width: 200px;
+      height: 200px;
+      background: #ffcc00;
+      top: -50px;
+      left: -50px;
+    }
+
+    .figure.two {
+      width: 150px;
+      height: 150px;
+      background: #ffffff;
+      bottom: -40px;
+      right: -40px;
+    }
+
+#usuarioDisplay{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #ff2f2f;
+    border: #ff2f2f, 1px, solid;
+  }
+
+.section,.article,.aside{
+    transition: background-color 0.3s ease;
+}
+
+#fechaActual{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.menu-hamburguesa {
+  position: relative;
+}
+
+#toggleMenu {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#menuDesplegable {
+    padding-bottom: 20px;
+    display: none;
+}
+
+#menuDesplegable.visible {
+  display: block;
+}
+
+#menuDesplegable ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menuDesplegable li {
+  margin: 8px 0;
+}
+
+/*#menuDesplegable a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}*/
+
+#menuDesplegable a:hover {
+  text-decoration: underline;
+}
+
+#barraScroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  background-color: #ff2f2f;
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto;
+}
+
+.slider img {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.slider button {
+  font-size: 24px;
+    cursor: pointer;
+    color: #ff2f2f;
+    border: #ff2f2f, 1px, solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/* Hover normal */
+.slider button:hover {
+  background-color: #000;
+}
+
+/* Hover en modo oscuro */
+.dark-mode .slider button:hover{
+  background-color: #fff;
+}
+
+#sliderImage {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+body {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+body.visible {
+  opacity: 1;
+}
+
+.error {
+  color: #ff2f2f;
+  font-size: 0.9em;
+  display: block;
+  margin-top: 4px;
+}
+
+#mensajeExito {
+  margin-top: 15px;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: none; /* oculto por defecto */
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+#mensajeExito.ok {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Icono animado */
+#mensajeExito .icono {
+  font-size: 1.5em;
+  animation: zoomIn 0.5s ease;
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}

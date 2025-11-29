@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Nitro Custom</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+    <!--fuente de la página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="barraScroll"></div>
+    <!--<header class="estilodeletra">-->
+    <header>
+        <button id="darkModeToggle">Modo Oscuro</button>
+        <h1>Taller Nitro Custom</h1>
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Taller de Coches">
+            <defs>
+    <!-- Filtro de brillo para efecto neón -->
+                <filter id="neon" x="-50%" y="-50%" width="200%" height="200%" >
+                    <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#ff2f2f" flood-opacity="1" />
+                    <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ff2f2f" flood-opacity="0.6" />
+                    <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#ff2f2f" flood-opacity="0.4" />
+                    <feDropShadow dx="0" dy="0" stdDeviation="20" flood-color="#ff2f2f" flood-opacity="0.2" />
+                </filter>
+    <!-- Red de líneas para efecto red neón -->
+                <pattern id="net" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <rect width="40" height="40" fill="none" />
+                    <path d="M0 0 L40 40 M40 0 L0 40" stroke="#ff2f2f" stroke-width="0.5" opacity="0.2"/>
+                </pattern>
+            </defs>
+
+    <!-- Icono simple de coche hecho con líneas y círculos -->
+            <g transform="translate(150 140)" filter="url(#neon)">
+                <rect x="0" y="-30" width="100" height="30" rx="10" ry="10" fill="none" stroke="#ff2f2f" stroke-width="3" />
+                <circle cx="20" cy="0" r="12" fill="none" stroke="#ff2f2f" stroke-width="3" />
+                <circle cx="80" cy="0" r="12" fill="none" stroke="#ff2f2f" stroke-width="3" />
+                <line x1="0" y1="-30" x2="20" y2="0" stroke="#ff2f2f" stroke-width="3" />
+                <line x1="100" y1="-30" x2="80" y2="0" stroke="#ff2f2f" stroke-width="3" />
+            </g>
+        </svg>
+    <!-- <div class="contenedor"><img src="./imagenes/Logotipo taller.png" alt="Logotipo taller (coche neón rojo)" width="200" weight="100"></div> -->
+        <div class="menu-hamburguesa">
+            <button id="toggleMenu">☰</button>
+            <nav id="menuDesplegable" class="oculto">
+                <ul>
+                    <li><a href="./horario.html"><b>Horario</b></a></li>
+                    <li><a href="./formulario_de_contacto.html"><b>Formulario de contacto</b></a></li>
+                    <li><a href="./servicios.html"><b>Servicios</b></a></li>
+                    <li><a href="./registrar.html"><b>Registrarse</b></a></li>
+                    <li><a href="./acerca_de.html"><b>Acerca de</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main><h2 class="pagina">Elementos de la Página</h2>
+        <div id="elemento" class="elementos"><nav>
+            <ul>
+                <li><a href="#section">Servicios</a></li>
+                <li><a href="#article">Localización</a></li>
+                <li><a href="#aside">Resultados e imágenes</a></li>
+            </ul>
+        </nav></div>
+    </main>
+    <section id="section">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Inspección y diagnóstico</li>
+            <li>Mantenimiento preventivo</li>
+            <li>Reparaciones mecánicas y eléctricas</li>
+            <li>Carrocería y pintura</li>
+            <li>Tunear</li>
+        </ul>  
+    </section>      
+    <article id="article">
+        <h2>Encuéntranos</h2>
+        <ol>
+            <li>Barcelona (Carrer de Joan Batllori)</li>
+            <li>Madrid (Calle Álcala)</li>
+            <li>Murcia (Carril Serranos)</li>
+        </ol>
+    </article>
+    <aside id="aside">
+        <h2>Resultados e imágenes</h2>
+        <img src="./imagenes/coche tuneado.webp" alt="coche tuneado" width="20%" height="15%">
+        <div>
+            <video width="7%" controls> <!--se inserta vídeo con controles-->
+                <source src="./imagenes/video coche tuneado.mp4" alt="video coche tuneado">
+            </video>
+        </div>
+    </aside>
+    <div class="slider">
+        <button id="prevBtn">⟨</button>
+        <img id="sliderImage" src="./imagenes/imagen1.jpg" alt="Galería" />
+        <button id="nextBtn">⟩</button>
+    </div>
+    <footer>
+        <div id="usuarioDisplay"></div>
+        <div id="fechaActual"></div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
