@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+    <!--fuente de la página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="barraScroll"></div>
+    <button id="darkModeToggle">Modo Oscuro</button>
+    <header><h1>Registrarse</h1></header>
+    <div class="register">
+        <div>
+            <label for="inputReUser">Nombre de usuario:</label>
+            <input type="text" id="inputReUser">
+        </div>
+        <div>
+            <label for="inputRePass">Contraseña:</label>
+            <input type="password" id="inputRePass">
+        </div>
+        <div>
+            <label for="inputRePass2">Confirmar contraseña:</label>
+            <input type="password" id="inputRePass2">
+        </div>
+        <div id="btnRegister">
+            <button onclick="funBtnRegister()">Crear cuenta</button>
+        </div>
+    </div>
+    
+    <footer>
+        <nav>
+            <a href="./index.html"><b>Página principal</b></a>
+        </nav>
+        <div id="usuarioDisplay"></div>
+        <div id="fechaActual"></div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
