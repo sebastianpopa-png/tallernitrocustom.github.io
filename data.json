@@ -1,0 +1,10 @@
+[
+  { "id": 1, "nombre": "Portátil CoreBook", "precio": 799 },
+  { "id": 2, "nombre": "Monitor UltraHD", "precio": 299 },
+  { "id": 3, "nombre": "Teclado Mecánico", "precio": 89 },
+  { "id": 4, "nombre": "Ratón inalámbrico", "precio": 25 },
+  { "id": 5, "nombre": "SSD 1TB NVMe", "precio": 119 },
+  { "id": 6, "nombre": "Base refrigerante", "precio": 35 },
+  { "id": 7, "nombre": "Auriculares Gaming", "precio": 59 },
+  { "id": 8, "nombre": "Impresora Multifunción", "precio": 149 }
+]
